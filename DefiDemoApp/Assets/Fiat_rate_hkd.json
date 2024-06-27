@@ -1,5 +1,5 @@
 {
-    [
+    "fiats": [
         {
             "fiat_rate":"47430",
             "fiat_symbol":"HKD",

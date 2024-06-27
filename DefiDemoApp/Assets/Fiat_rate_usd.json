@@ -1,5 +1,5 @@
 {
-    [
+    "fiats": [
         {
             "fiat_rate":"60000",
             "fiat_symbol":"USD",

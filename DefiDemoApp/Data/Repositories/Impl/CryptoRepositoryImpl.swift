@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-class CryptoRepositoryImpl: CryptoRepository {
+final class CryptoRepositoryImpl: CryptoRepository {
     func fetchCryptos() -> AnyPublisher<[Crypto], any Error> {
         guard let fileUrl = Bundle.main.url(forResource: "Currency", withExtension: "json") else {
             return Fail<[Crypto], Error>(error: AppError.fileNotFound)

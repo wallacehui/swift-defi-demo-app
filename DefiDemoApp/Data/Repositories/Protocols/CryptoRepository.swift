@@ -8,5 +8,5 @@
 import Combine
 
 protocol CryptoRepository {
-    func fetchCryptos() -> AnyPublisher<Crypto, Error>
+    func fetchCryptos() -> AnyPublisher<[Crypto], Error>
 }

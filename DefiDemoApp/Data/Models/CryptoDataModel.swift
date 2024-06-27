@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct CryptoResponseModel: Decodable {
+    let cryptos: [CryptoDataModel]
+}
+
 struct CryptoDataModel: Decodable {
     let name: String
     let symbol: String

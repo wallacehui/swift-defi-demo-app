@@ -8,7 +8,7 @@
 import Foundation
 
 enum AppError: Error {
-    case general(Error)
     case fileNotFound
     case decodeFailure
+    case invalidData
 }

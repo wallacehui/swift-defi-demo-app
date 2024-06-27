@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA599BD12C2DFE7300319389 /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BD02C2DFE7300319389 /* CryptoRepository.swift */; };
+		BA599BD32C2DFEF400319389 /* CryptoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BD22C2DFEF400319389 /* CryptoDataModel.swift */; };
+		BA599BD92C2DFFCA00319389 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BD82C2DFFCA00319389 /* Crypto.swift */; };
+		BA599BDC2C2E04A500319389 /* Fiat_rate_usd.json in Resources */ = {isa = PBXBuildFile; fileRef = BA599BDB2C2E04A500319389 /* Fiat_rate_usd.json */; };
+		BA599BDE2C2E04AB00319389 /* Currency.json in Resources */ = {isa = PBXBuildFile; fileRef = BA599BDD2C2E04AB00319389 /* Currency.json */; };
+		BA599BE02C2E04B100319389 /* Fiat_rate_hkd.json in Resources */ = {isa = PBXBuildFile; fileRef = BA599BDF2C2E04B100319389 /* Fiat_rate_hkd.json */; };
+		BA599BE22C2E04D900319389 /* CryptoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BE12C2E04D900319389 /* CryptoRepositoryImpl.swift */; };
+		BA599BE62C2E057D00319389 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BE52C2E057D00319389 /* AppError.swift */; };
+		BA599BE92C2E06BE00319389 /* CryptoDataModel+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BE82C2E06BE00319389 /* CryptoDataModel+Mapping.swift */; };
 		BA9950082C2DF08B00992C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950072C2DF08B00992C18 /* AppDelegate.swift */; };
 		BA99500A2C2DF08B00992C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950092C2DF08B00992C18 /* SceneDelegate.swift */; };
 		BA99500C2C2DF08B00992C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99500B2C2DF08B00992C18 /* ViewController.swift */; };
@@ -36,6 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA599BD02C2DFE7300319389 /* CryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepository.swift; sourceTree = "<group>"; };
+		BA599BD22C2DFEF400319389 /* CryptoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDataModel.swift; sourceTree = "<group>"; };
+		BA599BD82C2DFFCA00319389 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		BA599BDB2C2E04A500319389 /* Fiat_rate_usd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fiat_rate_usd.json; sourceTree = "<group>"; };
+		BA599BDD2C2E04AB00319389 /* Currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Currency.json; sourceTree = "<group>"; };
+		BA599BDF2C2E04B100319389 /* Fiat_rate_hkd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fiat_rate_hkd.json; sourceTree = "<group>"; };
+		BA599BE12C2E04D900319389 /* CryptoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepositoryImpl.swift; sourceTree = "<group>"; };
+		BA599BE52C2E057D00319389 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		BA599BE82C2E06BE00319389 /* CryptoDataModel+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CryptoDataModel+Mapping.swift"; sourceTree = "<group>"; };
 		BA9950042C2DF08B00992C18 /* DefiDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9950072C2DF08B00992C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9950092C2DF08B00992C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +94,130 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA599BC92C2DFDE100319389 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BE72C2E06B000319389 /* Mappings */,
+				BA599BCD2C2DFE3200319389 /* Models */,
+				BA599BCC2C2DFDFD00319389 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BA599BCA2C2DFDE700319389 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BD52C2DFF7D00319389 /* UseCases */,
+				BA599BD42C2DFF6B00319389 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BA599BCB2C2DFDEE00319389 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BA599BCC2C2DFDFD00319389 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BCF2C2DFE5A00319389 /* Impl */,
+				BA599BCE2C2DFE5200319389 /* Protocols */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BA599BCD2C2DFE3200319389 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BD22C2DFEF400319389 /* CryptoDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA599BCE2C2DFE5200319389 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BD02C2DFE7300319389 /* CryptoRepository.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BA599BCF2C2DFE5A00319389 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BE12C2E04D900319389 /* CryptoRepositoryImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		BA599BD42C2DFF6B00319389 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BD82C2DFFCA00319389 /* Crypto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA599BD52C2DFF7D00319389 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BD72C2DFF9000319389 /* Impl */,
+				BA599BD62C2DFF8300319389 /* Protocols */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BA599BD62C2DFF8300319389 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BA599BD72C2DFF9000319389 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		BA599BDA2C2E047F00319389 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BDF2C2E04B100319389 /* Fiat_rate_hkd.json */,
+				BA599BDD2C2E04AB00319389 /* Currency.json */,
+				BA599BDB2C2E04A500319389 /* Fiat_rate_usd.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BA599BE32C2E055500319389 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BE42C2E056000319389 /* Enums */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BA599BE42C2E056000319389 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BE52C2E057D00319389 /* AppError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		BA599BE72C2E06B000319389 /* Mappings */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BE82C2E06BE00319389 /* CryptoDataModel+Mapping.swift */,
+			);
+			path = Mappings;
+			sourceTree = "<group>";
+		};
 		BA994FFB2C2DF08B00992C18 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +241,11 @@
 		BA9950062C2DF08B00992C18 /* DefiDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				BA599BE32C2E055500319389 /* Common */,
+				BA599BDA2C2E047F00319389 /* Assets */,
+				BA599BCB2C2DFDEE00319389 /* Presentation */,
+				BA599BCA2C2DFDE700319389 /* Domain */,
+				BA599BC92C2DFDE100319389 /* Data */,
 				BA9950072C2DF08B00992C18 /* AppDelegate.swift */,
 				BA9950092C2DF08B00992C18 /* SceneDelegate.swift */,
 				BA99500B2C2DF08B00992C18 /* ViewController.swift */,
@@ -231,9 +378,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA599BDC2C2E04A500319389 /* Fiat_rate_usd.json in Resources */,
 				BA9950112C2DF08D00992C18 /* Assets.xcassets in Resources */,
 				BA9950142C2DF08D00992C18 /* Base in Resources */,
+				BA599BDE2C2E04AB00319389 /* Currency.json in Resources */,
 				BA99500F2C2DF08B00992C18 /* Base in Resources */,
+				BA599BE02C2E04B100319389 /* Fiat_rate_hkd.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +408,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA599BD92C2DFFCA00319389 /* Crypto.swift in Sources */,
+				BA599BD32C2DFEF400319389 /* CryptoDataModel.swift in Sources */,
 				BA99500C2C2DF08B00992C18 /* ViewController.swift in Sources */,
 				BA9950082C2DF08B00992C18 /* AppDelegate.swift in Sources */,
+				BA599BE92C2E06BE00319389 /* CryptoDataModel+Mapping.swift in Sources */,
+				BA599BE62C2E057D00319389 /* AppError.swift in Sources */,
+				BA599BD12C2DFE7300319389 /* CryptoRepository.swift in Sources */,
+				BA599BE22C2E04D900319389 /* CryptoRepositoryImpl.swift in Sources */,
 				BA99500A2C2DF08B00992C18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

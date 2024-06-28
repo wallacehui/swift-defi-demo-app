@@ -12,6 +12,6 @@ extension FiatDataModel {
         .init(symbol: fiat_symbol,
               cryptoSymbol: symbol,
               id: id,
-              rate: fiat_rate)
+              rate: Decimal(string: fiat_rate))
     }
 }

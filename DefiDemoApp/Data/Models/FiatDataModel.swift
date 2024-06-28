@@ -12,7 +12,7 @@ struct FiatResponseModel: Decodable {
 }
 
 struct FiatDataModel: Decodable {
-    let fiat_rate: Decimal
+    let fiat_rate: String
     let fiat_symbol: String
     let id: Int
     let symbol: String

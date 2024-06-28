@@ -8,9 +8,9 @@
 import Foundation
 
 struct AssetModel: Equatable {
-    let fiatRate: Decimal
-    let fiatSymbol: String
+    let fiatRate: Decimal?
+    let fiatSymbol: String?
     let cryptoSymbol: String
-    let cryptoAmount: String
+    let cryptoAmount: Decimal
     let cryptoId: Int
 }

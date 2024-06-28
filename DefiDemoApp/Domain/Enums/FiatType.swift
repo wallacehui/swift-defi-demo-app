@@ -11,3 +11,14 @@ enum FiatType {
     case hkd
     case usd
 }
+
+extension FiatType {
+    var currency: FiatCurrency {
+        switch self {
+        case .hkd:
+            return .hkd
+        case .usd:
+            return .usd
+        }
+    }
+}

@@ -11,5 +11,5 @@ struct Fiat: Equatable {
     let symbol: String
     let cryptoSymbol: String
     let id: Int
-    let rate: Decimal
+    let rate: Decimal?
 }

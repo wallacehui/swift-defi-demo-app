@@ -6,7 +6,9 @@
 //
 
 import Combine
+import Foundation
 
 protocol AssetUseCase {
     func getAssetList(with fiatType: FiatType) -> AnyPublisher<[AssetModel], AppError>
+    func calculateTotalBalance(_ assets: [AssetModel]) -> Decimal
 }

@@ -6,6 +6,7 @@
 //
 
 import Combine
+import Foundation
 
 final class AssetUseCaseHandler: AssetUseCase {
     private let cryptoRepository: CryptoRepository
@@ -33,5 +34,11 @@ final class AssetUseCaseHandler: AssetUseCase {
             }
             .mapError { _ in AppError.invalidData }
             .eraseToAnyPublisher()
+    }
+
+    func calculateTotalBalance(_ assets: [AssetModel]) -> Decimal {
+        assets
+            .compactMap { $0.fiatRate }
+            .reduce(0, +)
     }
 }

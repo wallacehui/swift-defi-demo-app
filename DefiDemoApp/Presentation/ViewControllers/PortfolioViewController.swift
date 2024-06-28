@@ -84,6 +84,10 @@ class PortfolioViewController: UIViewController {
 
     private func setupNavigationBar() {
         navigationItem.title = "Portfolio"
+        navigationItem.rightBarButtonItem = .init(title: "Setting",
+                                                  style: .plain,
+                                                  target: self,
+                                                  action: #selector(didTapSetting))
     }
 
     private func setupBinding() {
@@ -94,6 +98,11 @@ class PortfolioViewController: UIViewController {
                 self.tableView.reloadData()
             }
             .store(in: &cancellables)
+    }
+
+    @objc
+    private func didTapSetting() {
+        print("#hehe didtap")
     }
 }
 

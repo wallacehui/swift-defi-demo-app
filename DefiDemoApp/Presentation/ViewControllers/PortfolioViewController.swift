@@ -103,6 +103,8 @@ class PortfolioViewController: UIViewController {
     @objc
     private func didTapSetting() {
         print("#hehe didtap")
+        let vc = FiatSettingViewControllerFactory.makeFiatSettingViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

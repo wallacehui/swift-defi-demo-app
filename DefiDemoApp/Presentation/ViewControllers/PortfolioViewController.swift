@@ -20,7 +20,7 @@ class PortfolioViewController: UIViewController {
         return label
     }()
 
-    private lazy var totalBalanceContentView: UIStackView = {
+    private lazy var totalBalanceHeaderView: UIStackView = {
         let titleLabel = UILabel()
         titleLabel.font = .systemFont(ofSize: 24, weight: .semibold)
         titleLabel.text = "Total Balance"
@@ -29,29 +29,20 @@ class PortfolioViewController: UIViewController {
             totalBalanceLabel
         ])
         view.axis = .vertical
-        return view
-    }()
-
-    private lazy var totalBalanceView: UIView = {
-        let view = UIView()
-        view.addSubview(totalBalanceContentView)
-        totalBalanceContentView.snp.makeConstraints { make in
-            make.directionalEdges.equalToSuperview().inset(12)
-        }
-        view.layer.cornerRadius = 8
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.gray.cgColor
-        view.clipsToBounds = true
-        view.sizeToFit()
+        view.layoutMargins = .init(top: 12, left: 12, bottom: 12, right: 12)
+        view.isLayoutMarginsRelativeArrangement = true
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
     private lazy var tableView: UITableView = {
-        let tableView = UITableView()
+        let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.dataSource = self
-//        tableView.tableHeaderView = totalBalanceView
+        tableView.delegate = self
+        tableView.sectionHeaderTopPadding = 0
         tableView.register(AssetListTableViewCell.self, forCellReuseIdentifier: "AssetListTableViewCell")
         tableView.separatorStyle = .none
+        tableView.backgroundColor = .white
         return tableView
     }()
 
@@ -130,5 +121,11 @@ extension PortfolioViewController: UITableViewDataSource {
                     amount: "\(model.cryptoAmount) \(model.cryptoSymbol)",
                     valuation: formatter.string(for: model.fiatRate))
         return cell
+    }
+}
+
+extension PortfolioViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return totalBalanceHeaderView
     }
 }

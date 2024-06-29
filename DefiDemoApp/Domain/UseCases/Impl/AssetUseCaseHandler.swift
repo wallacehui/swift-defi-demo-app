@@ -29,7 +29,8 @@ final class AssetUseCaseHandler: AssetUseCase {
                                       fiatSymbol: fiat?.symbol,
                                       cryptoSymbol: crypto.symbol,
                                       cryptoAmount: crypto.amount,
-                                      cryptoId: crypto.id)
+                                      cryptoId: crypto.id, 
+                                      cryptoName: crypto.name)
                 }
             }
             .mapError { _ in AppError.invalidData }

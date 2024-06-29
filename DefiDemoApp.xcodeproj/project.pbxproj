@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4FFCBCC7BBB781D5CC578558 /* libPods-DefiDemoApp-DefiDemoAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB4F1F6F8442E23F8F899B4 /* libPods-DefiDemoApp-DefiDemoAppUITests.a */; };
 		55842EE9CDCBAC03116F132C /* libPods-DefiDemoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B10C8C7B85CCD3C8D9EEDEC9 /* libPods-DefiDemoAppTests.a */; };
 		BA599BD12C2DFE7300319389 /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BD02C2DFE7300319389 /* CryptoRepository.swift */; };
 		BA599BD32C2DFEF400319389 /* CryptoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BD22C2DFEF400319389 /* CryptoDataModel.swift */; };
@@ -28,6 +27,8 @@
 		BA599BFE2C2E289300319389 /* Fiat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BFD2C2E289300319389 /* Fiat.swift */; };
 		BA599C002C2E28F500319389 /* FiatDataModel+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BFF2C2E28F500319389 /* FiatDataModel+Mapping.swift */; };
 		BA599C022C2E296400319389 /* FiatRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599C012C2E296400319389 /* FiatRepositoryImpl.swift */; };
+		BA6243602C30175500530863 /* PortfolioViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA62435F2C30175500530863 /* PortfolioViewModelTest.swift */; };
+		BA6243622C30182800530863 /* UserDefaultsServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6243612C30182800530863 /* UserDefaultsServiceStub.swift */; };
 		BA6753072C2F157C000EDDF2 /* AssetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753062C2F157C000EDDF2 /* AssetListTableViewCell.swift */; };
 		BA67530C2C2F18B1000EDDF2 /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67530B2C2F18B1000EDDF2 /* PortfolioViewModel.swift */; };
 		BA67530E2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67530D2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift */; };
@@ -40,26 +41,22 @@
 		BA67531E2C2F35FF000EDDF2 /* FiatOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67531D2C2F35FF000EDDF2 /* FiatOption.swift */; };
 		BA6753232C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753222C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift */; };
 		BA6753252C2FC712000EDDF2 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753242C2FC712000EDDF2 /* UserDefaultsService.swift */; };
+		BA6753492C3013BC000EDDF2 /* CryptoRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753482C3013BC000EDDF2 /* CryptoRepositoryStub.swift */; };
+		BA67534C2C30146A000EDDF2 /* Crypto+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534B2C30146A000EDDF2 /* Crypto+TestData.swift */; };
+		BA67534E2C3015C8000EDDF2 /* Fiat+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534D2C3015C8000EDDF2 /* Fiat+TestData.swift */; };
+		BA6753502C3016A7000EDDF2 /* FiatRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */; };
+		BA9026582C301F1D006F6E25 /* FiatSettingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9026572C301F1D006F6E25 /* FiatSettingViewModelTest.swift */; };
+		BA90265B2C3020CC006F6E25 /* UserDefaultsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90265A2C3020CC006F6E25 /* UserDefaultsServiceTest.swift */; };
 		BA9950082C2DF08B00992C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950072C2DF08B00992C18 /* AppDelegate.swift */; };
 		BA99500A2C2DF08B00992C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950092C2DF08B00992C18 /* SceneDelegate.swift */; };
 		BA99500C2C2DF08B00992C18 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99500B2C2DF08B00992C18 /* PortfolioViewController.swift */; };
 		BA9950112C2DF08D00992C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9950102C2DF08D00992C18 /* Assets.xcassets */; };
 		BA9950142C2DF08D00992C18 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA9950132C2DF08D00992C18 /* Base */; };
-		BA99501F2C2DF08D00992C18 /* DefiDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99501E2C2DF08D00992C18 /* DefiDemoAppTests.swift */; };
-		BA9950292C2DF08D00992C18 /* DefiDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950282C2DF08D00992C18 /* DefiDemoAppUITests.swift */; };
-		BA99502B2C2DF08D00992C18 /* DefiDemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99502A2C2DF08D00992C18 /* DefiDemoAppUITestsLaunchTests.swift */; };
 		EA82AFF9CD22E10182C0C190 /* libPods-DefiDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4581D0B97369FE6464A0F8A /* libPods-DefiDemoApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BA99501B2C2DF08D00992C18 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA994FFC2C2DF08B00992C18 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA9950032C2DF08B00992C18;
-			remoteInfo = DefiDemoApp;
-		};
-		BA9950252C2DF08D00992C18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BA994FFC2C2DF08B00992C18 /* Project object */;
 			proxyType = 1;
@@ -95,6 +92,8 @@
 		BA599BFD2C2E289300319389 /* Fiat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fiat.swift; sourceTree = "<group>"; };
 		BA599BFF2C2E28F500319389 /* FiatDataModel+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FiatDataModel+Mapping.swift"; sourceTree = "<group>"; };
 		BA599C012C2E296400319389 /* FiatRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatRepositoryImpl.swift; sourceTree = "<group>"; };
+		BA62435F2C30175500530863 /* PortfolioViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModelTest.swift; sourceTree = "<group>"; };
+		BA6243612C30182800530863 /* UserDefaultsServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceStub.swift; sourceTree = "<group>"; };
 		BA6753062C2F157C000EDDF2 /* AssetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListTableViewCell.swift; sourceTree = "<group>"; };
 		BA67530B2C2F18B1000EDDF2 /* PortfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
 		BA67530D2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModelHandler.swift; sourceTree = "<group>"; };
@@ -107,6 +106,12 @@
 		BA67531D2C2F35FF000EDDF2 /* FiatOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatOption.swift; sourceTree = "<group>"; };
 		BA6753222C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceProvider.swift; sourceTree = "<group>"; };
 		BA6753242C2FC712000EDDF2 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		BA6753482C3013BC000EDDF2 /* CryptoRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepositoryStub.swift; sourceTree = "<group>"; };
+		BA67534B2C30146A000EDDF2 /* Crypto+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crypto+TestData.swift"; sourceTree = "<group>"; };
+		BA67534D2C3015C8000EDDF2 /* Fiat+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fiat+TestData.swift"; sourceTree = "<group>"; };
+		BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatRepositoryStub.swift; sourceTree = "<group>"; };
+		BA9026572C301F1D006F6E25 /* FiatSettingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSettingViewModelTest.swift; sourceTree = "<group>"; };
+		BA90265A2C3020CC006F6E25 /* UserDefaultsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceTest.swift; sourceTree = "<group>"; };
 		BA9950042C2DF08B00992C18 /* DefiDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9950072C2DF08B00992C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9950092C2DF08B00992C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,10 +120,6 @@
 		BA9950132C2DF08D00992C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA9950152C2DF08D00992C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA99501A2C2DF08D00992C18 /* DefiDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefiDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA99501E2C2DF08D00992C18 /* DefiDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiDemoAppTests.swift; sourceTree = "<group>"; };
-		BA9950242C2DF08D00992C18 /* DefiDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefiDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA9950282C2DF08D00992C18 /* DefiDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiDemoAppUITests.swift; sourceTree = "<group>"; };
-		BA99502A2C2DF08D00992C18 /* DefiDemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiDemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E4581D0B97369FE6464A0F8A /* libPods-DefiDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DefiDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E678E66F2FB9FCBDCD7399 /* Pods-DefiDemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefiDemoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DefiDemoAppTests/Pods-DefiDemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,14 +138,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55842EE9CDCBAC03116F132C /* libPods-DefiDemoAppTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA9950212C2DF08D00992C18 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FFCBCC7BBB781D5CC578558 /* libPods-DefiDemoApp-DefiDemoAppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,12 +387,47 @@
 			path = Providers;
 			sourceTree = "<group>";
 		};
+		BA6753472C301396000EDDF2 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				BA6753482C3013BC000EDDF2 /* CryptoRepositoryStub.swift */,
+				BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */,
+				BA6243612C30182800530863 /* UserDefaultsServiceStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		BA67534A2C3013F2000EDDF2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BA67534B2C30146A000EDDF2 /* Crypto+TestData.swift */,
+				BA67534D2C3015C8000EDDF2 /* Fiat+TestData.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BA6753512C3016D6000EDDF2 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA62435F2C30175500530863 /* PortfolioViewModelTest.swift */,
+				BA9026572C301F1D006F6E25 /* FiatSettingViewModelTest.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		BA9026592C3020AA006F6E25 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA90265A2C3020CC006F6E25 /* UserDefaultsServiceTest.swift */,
+			);
+			path = ServiceTests;
+			sourceTree = "<group>";
+		};
 		BA994FFB2C2DF08B00992C18 = {
 			isa = PBXGroup;
 			children = (
 				BA9950062C2DF08B00992C18 /* DefiDemoApp */,
 				BA99501D2C2DF08D00992C18 /* DefiDemoAppTests */,
-				BA9950272C2DF08D00992C18 /* DefiDemoAppUITests */,
 				BA9950052C2DF08B00992C18 /* Products */,
 				D222AB5D5E6B3DBA93EAB724 /* Pods */,
 				ED0DAE041D20B23BED0A1D76 /* Frameworks */,
@@ -411,7 +439,6 @@
 			children = (
 				BA9950042C2DF08B00992C18 /* DefiDemoApp.app */,
 				BA99501A2C2DF08D00992C18 /* DefiDemoAppTests.xctest */,
-				BA9950242C2DF08D00992C18 /* DefiDemoAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -436,18 +463,12 @@
 		BA99501D2C2DF08D00992C18 /* DefiDemoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				BA99501E2C2DF08D00992C18 /* DefiDemoAppTests.swift */,
+				BA9026592C3020AA006F6E25 /* ServiceTests */,
+				BA6753512C3016D6000EDDF2 /* ViewModelTests */,
+				BA67534A2C3013F2000EDDF2 /* Mocks */,
+				BA6753472C301396000EDDF2 /* Stubs */,
 			);
 			path = DefiDemoAppTests;
-			sourceTree = "<group>";
-		};
-		BA9950272C2DF08D00992C18 /* DefiDemoAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BA9950282C2DF08D00992C18 /* DefiDemoAppUITests.swift */,
-				BA99502A2C2DF08D00992C18 /* DefiDemoAppUITestsLaunchTests.swift */,
-			);
-			path = DefiDemoAppUITests;
 			sourceTree = "<group>";
 		};
 		D222AB5D5E6B3DBA93EAB724 /* Pods */ = {
@@ -513,25 +534,6 @@
 			productReference = BA99501A2C2DF08D00992C18 /* DefiDemoAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BA9950232C2DF08D00992C18 /* DefiDemoAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA9950342C2DF08D00992C18 /* Build configuration list for PBXNativeTarget "DefiDemoAppUITests" */;
-			buildPhases = (
-				68F4ED0DB89CBE6356A0B40D /* [CP] Check Pods Manifest.lock */,
-				BA9950202C2DF08D00992C18 /* Sources */,
-				BA9950212C2DF08D00992C18 /* Frameworks */,
-				BA9950222C2DF08D00992C18 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA9950262C2DF08D00992C18 /* PBXTargetDependency */,
-			);
-			name = DefiDemoAppUITests;
-			productName = DefiDemoAppUITests;
-			productReference = BA9950242C2DF08D00992C18 /* DefiDemoAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -546,10 +548,6 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					BA9950192C2DF08D00992C18 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = BA9950032C2DF08B00992C18;
-					};
-					BA9950232C2DF08D00992C18 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = BA9950032C2DF08B00992C18;
 					};
@@ -570,7 +568,6 @@
 			targets = (
 				BA9950032C2DF08B00992C18 /* DefiDemoApp */,
 				BA9950192C2DF08D00992C18 /* DefiDemoAppTests */,
-				BA9950232C2DF08D00992C18 /* DefiDemoAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -589,13 +586,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BA9950182C2DF08D00992C18 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA9950222C2DF08D00992C18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -649,28 +639,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		68F4ED0DB89CBE6356A0B40D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DefiDemoApp-DefiDemoAppUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -716,16 +684,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA99501F2C2DF08D00992C18 /* DefiDemoAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA9950202C2DF08D00992C18 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA9950292C2DF08D00992C18 /* DefiDemoAppUITests.swift in Sources */,
-				BA99502B2C2DF08D00992C18 /* DefiDemoAppUITestsLaunchTests.swift in Sources */,
+				BA90265B2C3020CC006F6E25 /* UserDefaultsServiceTest.swift in Sources */,
+				BA6243622C30182800530863 /* UserDefaultsServiceStub.swift in Sources */,
+				BA6753502C3016A7000EDDF2 /* FiatRepositoryStub.swift in Sources */,
+				BA9026582C301F1D006F6E25 /* FiatSettingViewModelTest.swift in Sources */,
+				BA6753492C3013BC000EDDF2 /* CryptoRepositoryStub.swift in Sources */,
+				BA67534E2C3015C8000EDDF2 /* Fiat+TestData.swift in Sources */,
+				BA67534C2C30146A000EDDF2 /* Crypto+TestData.swift in Sources */,
+				BA6243602C30175500530863 /* PortfolioViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,11 +702,6 @@
 			isa = PBXTargetDependency;
 			target = BA9950032C2DF08B00992C18 /* DefiDemoApp */;
 			targetProxy = BA99501B2C2DF08D00992C18 /* PBXContainerItemProxy */;
-		};
-		BA9950262C2DF08D00992C18 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BA9950032C2DF08B00992C18 /* DefiDemoApp */;
-			targetProxy = BA9950252C2DF08D00992C18 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -973,44 +934,6 @@
 			};
 			name = Release;
 		};
-		BA9950352C2DF08D00992C18 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1506BF437EF33674EC0AD83F /* Pods-DefiDemoApp-DefiDemoAppUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 344GH53CGA;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Wallace.DefiDemoAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DefiDemoApp;
-			};
-			name = Debug;
-		};
-		BA9950362C2DF08D00992C18 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D61FDB594E584DA584C23A7 /* Pods-DefiDemoApp-DefiDemoAppUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 344GH53CGA;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Wallace.DefiDemoAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DefiDemoApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1037,15 +960,6 @@
 			buildConfigurations = (
 				BA9950322C2DF08D00992C18 /* Debug */,
 				BA9950332C2DF08D00992C18 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BA9950342C2DF08D00992C18 /* Build configuration list for PBXNativeTarget "DefiDemoAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA9950352C2DF08D00992C18 /* Debug */,
-				BA9950362C2DF08D00992C18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

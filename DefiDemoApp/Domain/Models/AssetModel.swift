@@ -13,4 +13,5 @@ struct AssetModel: Equatable {
     let cryptoSymbol: String
     let cryptoAmount: Decimal
     let cryptoId: Int
+    let cryptoName: String
 }

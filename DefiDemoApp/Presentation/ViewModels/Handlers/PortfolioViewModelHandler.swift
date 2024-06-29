@@ -46,17 +46,6 @@ final class PortfolioViewModelHandler: PortfolioViewModel {
             selectedFiat.send(defaultFiat)
         }
     }
-
-    private func getAssetsList(with: FiatType) {
-        useCase.getAssetList(with: .hkd)
-            .sink(receiveCompletion: { _ in
-                // nothing to handle
-            }, receiveValue: { [weak self] models in
-                guard let self = self else { return }
-                self.assetListSubject.send(models)
-            })
-            .store(in: &cancellables)
-    }
 }
 
 extension PortfolioViewModelHandler: PortfolioViewModelInput {

@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum FiatType: CaseIterable, Equatable {
-    case hkd
-    case usd
+enum FiatType: String, CaseIterable, Equatable {
+    case hkd = "hkd"
+    case usd = "usd"
 }
 
 extension FiatType {

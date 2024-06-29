@@ -38,6 +38,8 @@
 		BA6753192C2F2F3A000EDDF2 /* FiatSettingViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753182C2F2F3A000EDDF2 /* FiatSettingViewControllerFactory.swift */; };
 		BA67531B2C2F32BD000EDDF2 /* FiatSelectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67531A2C2F32BD000EDDF2 /* FiatSelectionViewCell.swift */; };
 		BA67531E2C2F35FF000EDDF2 /* FiatOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67531D2C2F35FF000EDDF2 /* FiatOption.swift */; };
+		BA6753232C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753222C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift */; };
+		BA6753252C2FC712000EDDF2 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753242C2FC712000EDDF2 /* UserDefaultsService.swift */; };
 		BA9950082C2DF08B00992C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950072C2DF08B00992C18 /* AppDelegate.swift */; };
 		BA99500A2C2DF08B00992C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950092C2DF08B00992C18 /* SceneDelegate.swift */; };
 		BA99500C2C2DF08B00992C18 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99500B2C2DF08B00992C18 /* PortfolioViewController.swift */; };
@@ -103,6 +105,8 @@
 		BA6753182C2F2F3A000EDDF2 /* FiatSettingViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSettingViewControllerFactory.swift; sourceTree = "<group>"; };
 		BA67531A2C2F32BD000EDDF2 /* FiatSelectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSelectionViewCell.swift; sourceTree = "<group>"; };
 		BA67531D2C2F35FF000EDDF2 /* FiatOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatOption.swift; sourceTree = "<group>"; };
+		BA6753222C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceProvider.swift; sourceTree = "<group>"; };
+		BA6753242C2FC712000EDDF2 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		BA9950042C2DF08B00992C18 /* DefiDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9950072C2DF08B00992C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9950092C2DF08B00992C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 		BA599BE32C2E055500319389 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BA67531F2C2FC610000EDDF2 /* Services */,
 				BA599BE42C2E056000319389 /* Enums */,
 			);
 			path = Common;
@@ -362,6 +367,31 @@
 				BA67531D2C2F35FF000EDDF2 /* FiatOption.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BA67531F2C2FC610000EDDF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA6753212C2FC623000EDDF2 /* Providers */,
+				BA6753202C2FC61C000EDDF2 /* Protocols */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BA6753202C2FC61C000EDDF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA6753242C2FC712000EDDF2 /* UserDefaultsService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BA6753212C2FC623000EDDF2 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				BA6753222C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		BA994FFB2C2DF08B00992C18 = {
@@ -651,6 +681,7 @@
 				BA67530E2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift in Sources */,
 				BA599BD92C2DFFCA00319389 /* Crypto.swift in Sources */,
 				BA599BD32C2DFEF400319389 /* CryptoDataModel.swift in Sources */,
+				BA6753232C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift in Sources */,
 				BA599BEB2C2E120300319389 /* AssetUseCase.swift in Sources */,
 				BA599C022C2E296400319389 /* FiatRepositoryImpl.swift in Sources */,
 				BA6753152C2F2EAB000EDDF2 /* FiatSettingViewModelHandler.swift in Sources */,
@@ -667,6 +698,7 @@
 				BA599BE92C2E06BE00319389 /* CryptoDataModel+Mapping.swift in Sources */,
 				BA599BFA2C2E27D900319389 /* FiatCurrency.swift in Sources */,
 				BA599BE62C2E057D00319389 /* AppError.swift in Sources */,
+				BA6753252C2FC712000EDDF2 /* UserDefaultsService.swift in Sources */,
 				BA67531B2C2F32BD000EDDF2 /* FiatSelectionViewCell.swift in Sources */,
 				BA599BEE2C2E138F00319389 /* FiatType.swift in Sources */,
 				BA6753192C2F2F3A000EDDF2 /* FiatSettingViewControllerFactory.swift in Sources */,

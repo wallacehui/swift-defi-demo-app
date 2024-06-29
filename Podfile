@@ -12,8 +12,4 @@ target 'DefiDemoApp' do
     # Pods for testing
   end
 
-  target 'DefiDemoAppUITests' do
-    # Pods for testing
-  end
-
 end

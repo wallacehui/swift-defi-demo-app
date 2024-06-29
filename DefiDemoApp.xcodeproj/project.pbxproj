@@ -45,6 +45,7 @@
 		BA67534C2C30146A000EDDF2 /* Crypto+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534B2C30146A000EDDF2 /* Crypto+TestData.swift */; };
 		BA67534E2C3015C8000EDDF2 /* Fiat+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534D2C3015C8000EDDF2 /* Fiat+TestData.swift */; };
 		BA6753502C3016A7000EDDF2 /* FiatRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */; };
+		BA9026582C301F1D006F6E25 /* FiatSettingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9026572C301F1D006F6E25 /* FiatSettingViewModelTest.swift */; };
 		BA9950082C2DF08B00992C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950072C2DF08B00992C18 /* AppDelegate.swift */; };
 		BA99500A2C2DF08B00992C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950092C2DF08B00992C18 /* SceneDelegate.swift */; };
 		BA99500C2C2DF08B00992C18 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99500B2C2DF08B00992C18 /* PortfolioViewController.swift */; };
@@ -108,6 +109,7 @@
 		BA67534B2C30146A000EDDF2 /* Crypto+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crypto+TestData.swift"; sourceTree = "<group>"; };
 		BA67534D2C3015C8000EDDF2 /* Fiat+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fiat+TestData.swift"; sourceTree = "<group>"; };
 		BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatRepositoryStub.swift; sourceTree = "<group>"; };
+		BA9026572C301F1D006F6E25 /* FiatSettingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSettingViewModelTest.swift; sourceTree = "<group>"; };
 		BA9950042C2DF08B00992C18 /* DefiDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9950072C2DF08B00992C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9950092C2DF08B00992C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				BA62435F2C30175500530863 /* PortfolioViewModelTest.swift */,
+				BA9026572C301F1D006F6E25 /* FiatSettingViewModelTest.swift */,
 			);
 			path = ViewModelTests;
 			sourceTree = "<group>";
@@ -672,6 +675,7 @@
 			files = (
 				BA6243622C30182800530863 /* UserDefaultsServiceStub.swift in Sources */,
 				BA6753502C3016A7000EDDF2 /* FiatRepositoryStub.swift in Sources */,
+				BA9026582C301F1D006F6E25 /* FiatSettingViewModelTest.swift in Sources */,
 				BA6753492C3013BC000EDDF2 /* CryptoRepositoryStub.swift in Sources */,
 				BA67534E2C3015C8000EDDF2 /* Fiat+TestData.swift in Sources */,
 				BA67534C2C30146A000EDDF2 /* Crypto+TestData.swift in Sources */,

@@ -92,6 +92,14 @@ class PortfolioViewController: UIViewController {
                 self.tableView.reloadData()
             }
             .store(in: &cancellables)
+        viewModel.totalBalancePublisher
+            .removeDuplicates()
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] totalBalance in
+                guard let self = self else { return }
+                totalBalanceLabel.text = totalBalance
+            }
+            .store(in: &cancellables)
     }
 
     @objc

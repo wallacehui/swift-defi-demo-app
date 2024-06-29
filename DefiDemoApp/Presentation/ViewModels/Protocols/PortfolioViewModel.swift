@@ -9,6 +9,7 @@ import Combine
 
 protocol PortfolioViewModelOutput {
     var assetListPublisher: AnyPublisher<[AssetModel], Never> { get }
+    var totalBalancePublisher: AnyPublisher<String?, Never> { get }
     var assetList: [AssetModel] { get }
 }
 

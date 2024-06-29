@@ -5,10 +5,13 @@
 //  Created by Wallace Hui on 29/6/2024.
 //
 
+import Combine
+import SnapKit
 import UIKit
 
 class FiatSettingViewController: UIViewController {
     private let viewModel: FiatSettingViewModel
+    private var cancellables = Set<AnyCancellable>()
 
     let names = ["HKD", "USD"]
     let selected = [false, true]
@@ -18,7 +21,6 @@ class FiatSettingViewController: UIViewController {
         tableView.delegate = self
         tableView.register(FiatSelectionViewCell.self,
                            forCellReuseIdentifier: "FiatSelectionViewCell")
-        tableView.separatorStyle = .singleLine
         return tableView
     }()
 
@@ -35,6 +37,7 @@ class FiatSettingViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         setupNavigationBar()
+        setupBinding()
     }
 
     private func setupViews() {
@@ -47,11 +50,21 @@ class FiatSettingViewController: UIViewController {
     private func setupNavigationBar() {
         navigationItem.title = "Settings"
     }
+
+    private func setupBinding() {
+        viewModel.fiatOptionsPublisher
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                guard let self = self else { return }
+                self.tableView.reloadData()
+            }
+            .store(in: &cancellables)
+    }
 }
 
 extension FiatSettingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return viewModel.fiatOptions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,13 +73,15 @@ extension FiatSettingViewController: UITableViewDataSource {
             for: indexPath) as? FiatSelectionViewCell else {
             return .init()
         }
-        cell.update(name: names[indexPath.row], isSelected: selected[indexPath.row])
+        let option = viewModel.fiatOptions[indexPath.row]
+        cell.update(name: option.fiat.displayName,
+                    isSelected: option.isSelected)
         return cell
     }
 }
 
 extension FiatSettingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        viewModel.didSelectIndex(indexPath.row)
     }
 }

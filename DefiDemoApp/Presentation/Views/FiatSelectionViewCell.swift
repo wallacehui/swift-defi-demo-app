@@ -5,6 +5,7 @@
 //  Created by Wallace Hui on 29/6/2024.
 //
 
+import SnapKit
 import UIKit
 
 class FiatSelectionViewCell: UITableViewCell {
@@ -34,6 +35,8 @@ class FiatSelectionViewCell: UITableViewCell {
     }
     
     private func setupViews() {
+        selectionStyle = .none
+
         let container = UIStackView(arrangedSubviews: [
             nameLabel,
             checkImageView

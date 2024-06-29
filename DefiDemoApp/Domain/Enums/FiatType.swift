@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum FiatType {
+enum FiatType: CaseIterable, Equatable {
     case hkd
     case usd
 }
@@ -19,6 +19,15 @@ extension FiatType {
             return .hkd
         case .usd:
             return .usd
+        }
+    }
+
+    var displayName: String {
+        switch self {
+        case .hkd:
+            return "HKD"
+        case .usd:
+            return "USD"
         }
     }
 }

@@ -50,7 +50,7 @@ final class PortfolioViewModelHandler: PortfolioViewModel {
     private func getAssetsList(with: FiatType) {
         useCase.getAssetList(with: .hkd)
             .sink(receiveCompletion: { _ in
-                // TODO: Handle error
+                // nothing to handle
             }, receiveValue: { [weak self] models in
                 guard let self = self else { return }
                 self.assetListSubject.send(models)
@@ -66,6 +66,18 @@ extension PortfolioViewModelHandler: PortfolioViewModelInput {
 }
 
 extension PortfolioViewModelHandler: PortfolioViewModelOutput {
+    var totalBalancePublisher: AnyPublisher<String?, Never> {
+        assetListSubject
+            .filter { !$0.isEmpty }
+            .map {
+                $0.compactMap { $0.fiatRate }
+                    .reduce(0, +)
+            }
+            .combineLatest(selectedFiat.compactMap { $0 })
+            .map { $0.0.formatted(.currency(code: $0.1.displayName)) }
+            .eraseToAnyPublisher()
+    }
+    
     var assetList: [AssetModel] {
         assetListSubject.value
     }

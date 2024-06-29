@@ -27,6 +27,8 @@
 		BA599BFE2C2E289300319389 /* Fiat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BFD2C2E289300319389 /* Fiat.swift */; };
 		BA599C002C2E28F500319389 /* FiatDataModel+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BFF2C2E28F500319389 /* FiatDataModel+Mapping.swift */; };
 		BA599C022C2E296400319389 /* FiatRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599C012C2E296400319389 /* FiatRepositoryImpl.swift */; };
+		BA6243602C30175500530863 /* PortfolioViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA62435F2C30175500530863 /* PortfolioViewModelTest.swift */; };
+		BA6243622C30182800530863 /* UserDefaultsServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6243612C30182800530863 /* UserDefaultsServiceStub.swift */; };
 		BA6753072C2F157C000EDDF2 /* AssetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753062C2F157C000EDDF2 /* AssetListTableViewCell.swift */; };
 		BA67530C2C2F18B1000EDDF2 /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67530B2C2F18B1000EDDF2 /* PortfolioViewModel.swift */; };
 		BA67530E2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67530D2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift */; };
@@ -88,6 +90,8 @@
 		BA599BFD2C2E289300319389 /* Fiat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fiat.swift; sourceTree = "<group>"; };
 		BA599BFF2C2E28F500319389 /* FiatDataModel+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FiatDataModel+Mapping.swift"; sourceTree = "<group>"; };
 		BA599C012C2E296400319389 /* FiatRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatRepositoryImpl.swift; sourceTree = "<group>"; };
+		BA62435F2C30175500530863 /* PortfolioViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModelTest.swift; sourceTree = "<group>"; };
+		BA6243612C30182800530863 /* UserDefaultsServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceStub.swift; sourceTree = "<group>"; };
 		BA6753062C2F157C000EDDF2 /* AssetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListTableViewCell.swift; sourceTree = "<group>"; };
 		BA67530B2C2F18B1000EDDF2 /* PortfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
 		BA67530D2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModelHandler.swift; sourceTree = "<group>"; };
@@ -384,6 +388,7 @@
 			children = (
 				BA6753482C3013BC000EDDF2 /* CryptoRepositoryStub.swift */,
 				BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */,
+				BA6243612C30182800530863 /* UserDefaultsServiceStub.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 		BA6753512C3016D6000EDDF2 /* ViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA62435F2C30175500530863 /* PortfolioViewModelTest.swift */,
 			);
 			path = ViewModelTests;
 			sourceTree = "<group>";

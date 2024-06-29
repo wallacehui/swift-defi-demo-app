@@ -70,7 +70,10 @@ class PortfolioViewController: UIViewController {
         setupNavigationBar()
         setupViews()
         setupBinding()
+    }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         viewModel.initialiseData()
     }
 
@@ -102,7 +105,6 @@ class PortfolioViewController: UIViewController {
 
     @objc
     private func didTapSetting() {
-        print("#hehe didtap")
         let vc = FiatSettingViewControllerFactory.makeFiatSettingViewController()
         navigationController?.pushViewController(vc, animated: true)
     }

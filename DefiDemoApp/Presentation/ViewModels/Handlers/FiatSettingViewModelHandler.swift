@@ -8,30 +8,43 @@
 import Combine
 
 final class FiatSettingViewModelHandler: FiatSettingViewModel {
-    private let userDefaultsSerivce: UserDefaultsService
+    private let userDefaultsService: UserDefaultsService
 
     private var cancellables = Set<AnyCancellable>()
     private let fiatOptionsSubject = CurrentValueSubject<[FiatOption], Never>([])
+    private let selected = CurrentValueSubject<FiatType?, Never>(nil)
 
     init(userDefaultsSerivce: UserDefaultsService = UserDefaultsServiceProvider.shared) {
-        self.userDefaultsSerivce = userDefaultsSerivce
+        self.userDefaultsService = userDefaultsSerivce
+        setupBinding()
         initialOptions()
+    }
+
+    private func setupBinding() {
+        selected
+            .removeDuplicates()
+            .sink { [weak self] selectedFiat in
+                guard let self = self else { return }
+                let options = FiatType.allCases.map { FiatOption(fiat: $0, isSelected: $0 == selectedFiat) }
+                fiatOptionsSubject.send(options)
+            }
+            .store(in: &cancellables)
     }
 
     private func initialOptions() {
         var selectedFiat: FiatType?
-        if let value = userDefaultsSerivce.getString(forKey: .fiatValuation) {
+        if let value = userDefaultsService.getString(forKey: .fiatValuation) {
               selectedFiat = FiatType(rawValue: value)
         }
-        let options = FiatType.allCases.map { FiatOption(fiat: $0, isSelected: $0 == selectedFiat) }
-        fiatOptionsSubject.send(options)
+        selected.send(selectedFiat)
     }
 }
 
 extension FiatSettingViewModelHandler: FiatSettingViewModelInput {
     func didSelectIndex(_ index: Int) {
         let option = fiatOptions[index]
-        userDefaultsSerivce.saveString(option.fiat.rawValue, forKey: .fiatValuation)
+        selected.send(option.fiat)
+        userDefaultsService.saveString(option.fiat.rawValue, forKey: .fiatValuation)
     }
 }
 

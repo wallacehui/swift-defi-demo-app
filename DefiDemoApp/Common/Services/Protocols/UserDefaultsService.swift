@@ -8,6 +8,6 @@
 import Foundation
 
 protocol UserDefaultsService {
-    func saveString(_ value: String, forKey key: UserDefaultsKey)
+    func saveString(_ value: String?, forKey key: UserDefaultsKey)
     func getString(forKey key: UserDefaultsKey) -> String?
 }

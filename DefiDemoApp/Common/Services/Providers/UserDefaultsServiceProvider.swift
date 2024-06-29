@@ -18,7 +18,7 @@ class UserDefaultsServiceProvider: UserDefaultsService {
 
     private init() {}
 
-    func saveString(_ value: String, forKey key: UserDefaultsKey) {
+    func saveString(_ value: String?, forKey key: UserDefaultsKey) {
         defaults.set(value, forKey: key.rawValue)
     }
 

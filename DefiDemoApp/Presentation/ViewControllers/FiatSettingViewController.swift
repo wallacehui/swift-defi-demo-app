@@ -13,8 +13,6 @@ class FiatSettingViewController: UIViewController {
     private let viewModel: FiatSettingViewModel
     private var cancellables = Set<AnyCancellable>()
 
-    let names = ["HKD", "USD"]
-    let selected = [false, true]
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.dataSource = self

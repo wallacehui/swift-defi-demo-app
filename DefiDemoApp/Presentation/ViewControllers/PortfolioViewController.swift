@@ -120,7 +120,7 @@ extension PortfolioViewController: UITableViewDataSource {
             return .init()
         }
         let model = viewModel.assetList[indexPath.row]
-        cell.update(name: model.cryptoSymbol,
+        cell.update(name: model.cryptoName.capitalized,
                     amount: "\(model.cryptoAmount) \(model.cryptoSymbol)",
                     valuation: model.fiatRate?.formatted(.currency(code: model.fiatSymbol ?? "")))
         return cell

@@ -46,6 +46,7 @@
 		BA67534E2C3015C8000EDDF2 /* Fiat+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534D2C3015C8000EDDF2 /* Fiat+TestData.swift */; };
 		BA6753502C3016A7000EDDF2 /* FiatRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */; };
 		BA9026582C301F1D006F6E25 /* FiatSettingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9026572C301F1D006F6E25 /* FiatSettingViewModelTest.swift */; };
+		BA90265B2C3020CC006F6E25 /* UserDefaultsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90265A2C3020CC006F6E25 /* UserDefaultsServiceTest.swift */; };
 		BA9950082C2DF08B00992C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950072C2DF08B00992C18 /* AppDelegate.swift */; };
 		BA99500A2C2DF08B00992C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950092C2DF08B00992C18 /* SceneDelegate.swift */; };
 		BA99500C2C2DF08B00992C18 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99500B2C2DF08B00992C18 /* PortfolioViewController.swift */; };
@@ -110,6 +111,7 @@
 		BA67534D2C3015C8000EDDF2 /* Fiat+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fiat+TestData.swift"; sourceTree = "<group>"; };
 		BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatRepositoryStub.swift; sourceTree = "<group>"; };
 		BA9026572C301F1D006F6E25 /* FiatSettingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSettingViewModelTest.swift; sourceTree = "<group>"; };
+		BA90265A2C3020CC006F6E25 /* UserDefaultsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceTest.swift; sourceTree = "<group>"; };
 		BA9950042C2DF08B00992C18 /* DefiDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9950072C2DF08B00992C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9950092C2DF08B00992C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -413,6 +415,14 @@
 			path = ViewModelTests;
 			sourceTree = "<group>";
 		};
+		BA9026592C3020AA006F6E25 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA90265A2C3020CC006F6E25 /* UserDefaultsServiceTest.swift */,
+			);
+			path = ServiceTests;
+			sourceTree = "<group>";
+		};
 		BA994FFB2C2DF08B00992C18 = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +463,7 @@
 		BA99501D2C2DF08D00992C18 /* DefiDemoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA9026592C3020AA006F6E25 /* ServiceTests */,
 				BA6753512C3016D6000EDDF2 /* ViewModelTests */,
 				BA67534A2C3013F2000EDDF2 /* Mocks */,
 				BA6753472C301396000EDDF2 /* Stubs */,
@@ -673,6 +684,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA90265B2C3020CC006F6E25 /* UserDefaultsServiceTest.swift in Sources */,
 				BA6243622C30182800530863 /* UserDefaultsServiceStub.swift in Sources */,
 				BA6753502C3016A7000EDDF2 /* FiatRepositoryStub.swift in Sources */,
 				BA9026582C301F1D006F6E25 /* FiatSettingViewModelTest.swift in Sources */,

@@ -7,15 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FFCBCC7BBB781D5CC578558 /* libPods-DefiDemoApp-DefiDemoAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB4F1F6F8442E23F8F899B4 /* libPods-DefiDemoApp-DefiDemoAppUITests.a */; };
+		55842EE9CDCBAC03116F132C /* libPods-DefiDemoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B10C8C7B85CCD3C8D9EEDEC9 /* libPods-DefiDemoAppTests.a */; };
+		BA599BD12C2DFE7300319389 /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BD02C2DFE7300319389 /* CryptoRepository.swift */; };
+		BA599BD32C2DFEF400319389 /* CryptoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BD22C2DFEF400319389 /* CryptoDataModel.swift */; };
+		BA599BD92C2DFFCA00319389 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BD82C2DFFCA00319389 /* Crypto.swift */; };
+		BA599BDC2C2E04A500319389 /* Fiat_rate_usd.json in Resources */ = {isa = PBXBuildFile; fileRef = BA599BDB2C2E04A500319389 /* Fiat_rate_usd.json */; };
+		BA599BDE2C2E04AB00319389 /* Currency.json in Resources */ = {isa = PBXBuildFile; fileRef = BA599BDD2C2E04AB00319389 /* Currency.json */; };
+		BA599BE02C2E04B100319389 /* Fiat_rate_hkd.json in Resources */ = {isa = PBXBuildFile; fileRef = BA599BDF2C2E04B100319389 /* Fiat_rate_hkd.json */; };
+		BA599BE22C2E04D900319389 /* CryptoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BE12C2E04D900319389 /* CryptoRepositoryImpl.swift */; };
+		BA599BE62C2E057D00319389 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BE52C2E057D00319389 /* AppError.swift */; };
+		BA599BE92C2E06BE00319389 /* CryptoDataModel+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BE82C2E06BE00319389 /* CryptoDataModel+Mapping.swift */; };
+		BA599BEB2C2E120300319389 /* AssetUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BEA2C2E120300319389 /* AssetUseCase.swift */; };
+		BA599BEE2C2E138F00319389 /* FiatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BED2C2E138F00319389 /* FiatType.swift */; };
+		BA599BF02C2E13F600319389 /* AssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BEF2C2E13F600319389 /* AssetModel.swift */; };
+		BA599BF22C2E147A00319389 /* AssetUseCaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BF12C2E147A00319389 /* AssetUseCaseHandler.swift */; };
+		BA599BF72C2E276B00319389 /* FiatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BF62C2E276B00319389 /* FiatRepository.swift */; };
+		BA599BFA2C2E27D900319389 /* FiatCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BF92C2E27D900319389 /* FiatCurrency.swift */; };
+		BA599BFC2C2E280900319389 /* FiatDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BFB2C2E280900319389 /* FiatDataModel.swift */; };
+		BA599BFE2C2E289300319389 /* Fiat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BFD2C2E289300319389 /* Fiat.swift */; };
+		BA599C002C2E28F500319389 /* FiatDataModel+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599BFF2C2E28F500319389 /* FiatDataModel+Mapping.swift */; };
+		BA599C022C2E296400319389 /* FiatRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA599C012C2E296400319389 /* FiatRepositoryImpl.swift */; };
+		BA6753072C2F157C000EDDF2 /* AssetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753062C2F157C000EDDF2 /* AssetListTableViewCell.swift */; };
+		BA67530C2C2F18B1000EDDF2 /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67530B2C2F18B1000EDDF2 /* PortfolioViewModel.swift */; };
+		BA67530E2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67530D2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift */; };
+		BA6753112C2F1D20000EDDF2 /* PortfolioViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753102C2F1D20000EDDF2 /* PortfolioViewControllerFactory.swift */; };
+		BA6753132C2F2E66000EDDF2 /* FiatSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753122C2F2E66000EDDF2 /* FiatSettingViewController.swift */; };
+		BA6753152C2F2EAB000EDDF2 /* FiatSettingViewModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753142C2F2EAB000EDDF2 /* FiatSettingViewModelHandler.swift */; };
+		BA6753172C2F2EB8000EDDF2 /* FiatSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753162C2F2EB8000EDDF2 /* FiatSettingViewModel.swift */; };
+		BA6753192C2F2F3A000EDDF2 /* FiatSettingViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753182C2F2F3A000EDDF2 /* FiatSettingViewControllerFactory.swift */; };
+		BA67531B2C2F32BD000EDDF2 /* FiatSelectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67531A2C2F32BD000EDDF2 /* FiatSelectionViewCell.swift */; };
+		BA67531E2C2F35FF000EDDF2 /* FiatOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67531D2C2F35FF000EDDF2 /* FiatOption.swift */; };
+		BA6753232C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753222C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift */; };
+		BA6753252C2FC712000EDDF2 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753242C2FC712000EDDF2 /* UserDefaultsService.swift */; };
 		BA9950082C2DF08B00992C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950072C2DF08B00992C18 /* AppDelegate.swift */; };
 		BA99500A2C2DF08B00992C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950092C2DF08B00992C18 /* SceneDelegate.swift */; };
-		BA99500C2C2DF08B00992C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99500B2C2DF08B00992C18 /* ViewController.swift */; };
-		BA99500F2C2DF08B00992C18 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA99500E2C2DF08B00992C18 /* Base */; };
+		BA99500C2C2DF08B00992C18 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99500B2C2DF08B00992C18 /* PortfolioViewController.swift */; };
 		BA9950112C2DF08D00992C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9950102C2DF08D00992C18 /* Assets.xcassets */; };
 		BA9950142C2DF08D00992C18 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA9950132C2DF08D00992C18 /* Base */; };
 		BA99501F2C2DF08D00992C18 /* DefiDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99501E2C2DF08D00992C18 /* DefiDemoAppTests.swift */; };
 		BA9950292C2DF08D00992C18 /* DefiDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950282C2DF08D00992C18 /* DefiDemoAppUITests.swift */; };
 		BA99502B2C2DF08D00992C18 /* DefiDemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99502A2C2DF08D00992C18 /* DefiDemoAppUITestsLaunchTests.swift */; };
+		EA82AFF9CD22E10182C0C190 /* libPods-DefiDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4581D0B97369FE6464A0F8A /* libPods-DefiDemoApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +69,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1506BF437EF33674EC0AD83F /* Pods-DefiDemoApp-DefiDemoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefiDemoApp-DefiDemoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DefiDemoApp-DefiDemoAppUITests/Pods-DefiDemoApp-DefiDemoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D61FDB594E584DA584C23A7 /* Pods-DefiDemoApp-DefiDemoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefiDemoApp-DefiDemoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DefiDemoApp-DefiDemoAppUITests/Pods-DefiDemoApp-DefiDemoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4E990A2028172AE038AB4D4E /* Pods-DefiDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefiDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-DefiDemoApp/Pods-DefiDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		53DDD18BD3C093D8732108E8 /* Pods-DefiDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefiDemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-DefiDemoAppTests/Pods-DefiDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E18EABE9988C04A9465D60D /* Pods-DefiDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefiDemoApp.release.xcconfig"; path = "Target Support Files/Pods-DefiDemoApp/Pods-DefiDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		7DB4F1F6F8442E23F8F899B4 /* libPods-DefiDemoApp-DefiDemoAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DefiDemoApp-DefiDemoAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10C8C7B85CCD3C8D9EEDEC9 /* libPods-DefiDemoAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DefiDemoAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA599BD02C2DFE7300319389 /* CryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepository.swift; sourceTree = "<group>"; };
+		BA599BD22C2DFEF400319389 /* CryptoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDataModel.swift; sourceTree = "<group>"; };
+		BA599BD82C2DFFCA00319389 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		BA599BDB2C2E04A500319389 /* Fiat_rate_usd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fiat_rate_usd.json; sourceTree = "<group>"; };
+		BA599BDD2C2E04AB00319389 /* Currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Currency.json; sourceTree = "<group>"; };
+		BA599BDF2C2E04B100319389 /* Fiat_rate_hkd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fiat_rate_hkd.json; sourceTree = "<group>"; };
+		BA599BE12C2E04D900319389 /* CryptoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepositoryImpl.swift; sourceTree = "<group>"; };
+		BA599BE52C2E057D00319389 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		BA599BE82C2E06BE00319389 /* CryptoDataModel+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CryptoDataModel+Mapping.swift"; sourceTree = "<group>"; };
+		BA599BEA2C2E120300319389 /* AssetUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetUseCase.swift; sourceTree = "<group>"; };
+		BA599BED2C2E138F00319389 /* FiatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatType.swift; sourceTree = "<group>"; };
+		BA599BEF2C2E13F600319389 /* AssetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetModel.swift; sourceTree = "<group>"; };
+		BA599BF12C2E147A00319389 /* AssetUseCaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetUseCaseHandler.swift; sourceTree = "<group>"; };
+		BA599BF62C2E276B00319389 /* FiatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatRepository.swift; sourceTree = "<group>"; };
+		BA599BF92C2E27D900319389 /* FiatCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatCurrency.swift; sourceTree = "<group>"; };
+		BA599BFB2C2E280900319389 /* FiatDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatDataModel.swift; sourceTree = "<group>"; };
+		BA599BFD2C2E289300319389 /* Fiat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fiat.swift; sourceTree = "<group>"; };
+		BA599BFF2C2E28F500319389 /* FiatDataModel+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FiatDataModel+Mapping.swift"; sourceTree = "<group>"; };
+		BA599C012C2E296400319389 /* FiatRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatRepositoryImpl.swift; sourceTree = "<group>"; };
+		BA6753062C2F157C000EDDF2 /* AssetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListTableViewCell.swift; sourceTree = "<group>"; };
+		BA67530B2C2F18B1000EDDF2 /* PortfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
+		BA67530D2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModelHandler.swift; sourceTree = "<group>"; };
+		BA6753102C2F1D20000EDDF2 /* PortfolioViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewControllerFactory.swift; sourceTree = "<group>"; };
+		BA6753122C2F2E66000EDDF2 /* FiatSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSettingViewController.swift; sourceTree = "<group>"; };
+		BA6753142C2F2EAB000EDDF2 /* FiatSettingViewModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSettingViewModelHandler.swift; sourceTree = "<group>"; };
+		BA6753162C2F2EB8000EDDF2 /* FiatSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSettingViewModel.swift; sourceTree = "<group>"; };
+		BA6753182C2F2F3A000EDDF2 /* FiatSettingViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSettingViewControllerFactory.swift; sourceTree = "<group>"; };
+		BA67531A2C2F32BD000EDDF2 /* FiatSelectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSelectionViewCell.swift; sourceTree = "<group>"; };
+		BA67531D2C2F35FF000EDDF2 /* FiatOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatOption.swift; sourceTree = "<group>"; };
+		BA6753222C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceProvider.swift; sourceTree = "<group>"; };
+		BA6753242C2FC712000EDDF2 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		BA9950042C2DF08B00992C18 /* DefiDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9950072C2DF08B00992C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9950092C2DF08B00992C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA99500B2C2DF08B00992C18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA99500E2C2DF08B00992C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA99500B2C2DF08B00992C18 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		BA9950102C2DF08D00992C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA9950132C2DF08D00992C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA9950152C2DF08D00992C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +119,8 @@
 		BA9950242C2DF08D00992C18 /* DefiDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefiDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9950282C2DF08D00992C18 /* DefiDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiDemoAppUITests.swift; sourceTree = "<group>"; };
 		BA99502A2C2DF08D00992C18 /* DefiDemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiDemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4581D0B97369FE6464A0F8A /* libPods-DefiDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DefiDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E678E66F2FB9FCBDCD7399 /* Pods-DefiDemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefiDemoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DefiDemoAppTests/Pods-DefiDemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA82AFF9CD22E10182C0C190 /* libPods-DefiDemoApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55842EE9CDCBAC03116F132C /* libPods-DefiDemoAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +144,256 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FFCBCC7BBB781D5CC578558 /* libPods-DefiDemoApp-DefiDemoAppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA599BC92C2DFDE100319389 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BF82C2E27C900319389 /* Enums */,
+				BA599BE72C2E06B000319389 /* Mappings */,
+				BA599BCD2C2DFE3200319389 /* Models */,
+				BA599BCC2C2DFDFD00319389 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BA599BCA2C2DFDE700319389 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BEC2C2E137E00319389 /* Enums */,
+				BA599BD52C2DFF7D00319389 /* UseCases */,
+				BA599BD42C2DFF6B00319389 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BA599BCB2C2DFDEE00319389 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BA67531C2C2F35F4000EDDF2 /* Models */,
+				BA67530F2C2F1D0E000EDDF2 /* Factories */,
+				BA6753082C2F188D000EDDF2 /* ViewModels */,
+				BA6753052C2F1561000EDDF2 /* Views */,
+				BA6753042C2F1553000EDDF2 /* ViewControllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BA599BCC2C2DFDFD00319389 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BCF2C2DFE5A00319389 /* Impl */,
+				BA599BCE2C2DFE5200319389 /* Protocols */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BA599BCD2C2DFE3200319389 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BD22C2DFEF400319389 /* CryptoDataModel.swift */,
+				BA599BFB2C2E280900319389 /* FiatDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA599BCE2C2DFE5200319389 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BD02C2DFE7300319389 /* CryptoRepository.swift */,
+				BA599BF62C2E276B00319389 /* FiatRepository.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BA599BCF2C2DFE5A00319389 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BE12C2E04D900319389 /* CryptoRepositoryImpl.swift */,
+				BA599C012C2E296400319389 /* FiatRepositoryImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		BA599BD42C2DFF6B00319389 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BD82C2DFFCA00319389 /* Crypto.swift */,
+				BA599BEF2C2E13F600319389 /* AssetModel.swift */,
+				BA599BFD2C2E289300319389 /* Fiat.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA599BD52C2DFF7D00319389 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BD72C2DFF9000319389 /* Impl */,
+				BA599BD62C2DFF8300319389 /* Protocols */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BA599BD62C2DFF8300319389 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BEA2C2E120300319389 /* AssetUseCase.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BA599BD72C2DFF9000319389 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BF12C2E147A00319389 /* AssetUseCaseHandler.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		BA599BDA2C2E047F00319389 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BDF2C2E04B100319389 /* Fiat_rate_hkd.json */,
+				BA599BDD2C2E04AB00319389 /* Currency.json */,
+				BA599BDB2C2E04A500319389 /* Fiat_rate_usd.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BA599BE32C2E055500319389 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BA67531F2C2FC610000EDDF2 /* Services */,
+				BA599BE42C2E056000319389 /* Enums */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BA599BE42C2E056000319389 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BE52C2E057D00319389 /* AppError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		BA599BE72C2E06B000319389 /* Mappings */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BE82C2E06BE00319389 /* CryptoDataModel+Mapping.swift */,
+				BA599BFF2C2E28F500319389 /* FiatDataModel+Mapping.swift */,
+			);
+			path = Mappings;
+			sourceTree = "<group>";
+		};
+		BA599BEC2C2E137E00319389 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BED2C2E138F00319389 /* FiatType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		BA599BF82C2E27C900319389 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BA599BF92C2E27D900319389 /* FiatCurrency.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		BA6753042C2F1553000EDDF2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA99500B2C2DF08B00992C18 /* PortfolioViewController.swift */,
+				BA6753122C2F2E66000EDDF2 /* FiatSettingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BA6753052C2F1561000EDDF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA6753062C2F157C000EDDF2 /* AssetListTableViewCell.swift */,
+				BA67531A2C2F32BD000EDDF2 /* FiatSelectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA6753082C2F188D000EDDF2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BA67530A2C2F189D000EDDF2 /* Handlers */,
+				BA6753092C2F1895000EDDF2 /* Protocols */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BA6753092C2F1895000EDDF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA67530B2C2F18B1000EDDF2 /* PortfolioViewModel.swift */,
+				BA6753162C2F2EB8000EDDF2 /* FiatSettingViewModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BA67530A2C2F189D000EDDF2 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				BA67530D2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift */,
+				BA6753142C2F2EAB000EDDF2 /* FiatSettingViewModelHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		BA67530F2C2F1D0E000EDDF2 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				BA6753102C2F1D20000EDDF2 /* PortfolioViewControllerFactory.swift */,
+				BA6753182C2F2F3A000EDDF2 /* FiatSettingViewControllerFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		BA67531C2C2F35F4000EDDF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA67531D2C2F35FF000EDDF2 /* FiatOption.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA67531F2C2FC610000EDDF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA6753212C2FC623000EDDF2 /* Providers */,
+				BA6753202C2FC61C000EDDF2 /* Protocols */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BA6753202C2FC61C000EDDF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA6753242C2FC712000EDDF2 /* UserDefaultsService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BA6753212C2FC623000EDDF2 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				BA6753222C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
 		BA994FFB2C2DF08B00992C18 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +401,8 @@
 				BA99501D2C2DF08D00992C18 /* DefiDemoAppTests */,
 				BA9950272C2DF08D00992C18 /* DefiDemoAppUITests */,
 				BA9950052C2DF08B00992C18 /* Products */,
+				D222AB5D5E6B3DBA93EAB724 /* Pods */,
+				ED0DAE041D20B23BED0A1D76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +419,13 @@
 		BA9950062C2DF08B00992C18 /* DefiDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				BA599BE32C2E055500319389 /* Common */,
+				BA599BDA2C2E047F00319389 /* Assets */,
+				BA599BCB2C2DFDEE00319389 /* Presentation */,
+				BA599BCA2C2DFDE700319389 /* Domain */,
+				BA599BC92C2DFDE100319389 /* Data */,
 				BA9950072C2DF08B00992C18 /* AppDelegate.swift */,
 				BA9950092C2DF08B00992C18 /* SceneDelegate.swift */,
-				BA99500B2C2DF08B00992C18 /* ViewController.swift */,
-				BA99500D2C2DF08B00992C18 /* Main.storyboard */,
 				BA9950102C2DF08D00992C18 /* Assets.xcassets */,
 				BA9950122C2DF08D00992C18 /* LaunchScreen.storyboard */,
 				BA9950152C2DF08D00992C18 /* Info.plist */,
@@ -127,6 +450,29 @@
 			path = DefiDemoAppUITests;
 			sourceTree = "<group>";
 		};
+		D222AB5D5E6B3DBA93EAB724 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E990A2028172AE038AB4D4E /* Pods-DefiDemoApp.debug.xcconfig */,
+				5E18EABE9988C04A9465D60D /* Pods-DefiDemoApp.release.xcconfig */,
+				1506BF437EF33674EC0AD83F /* Pods-DefiDemoApp-DefiDemoAppUITests.debug.xcconfig */,
+				4D61FDB594E584DA584C23A7 /* Pods-DefiDemoApp-DefiDemoAppUITests.release.xcconfig */,
+				F3E678E66F2FB9FCBDCD7399 /* Pods-DefiDemoAppTests.debug.xcconfig */,
+				53DDD18BD3C093D8732108E8 /* Pods-DefiDemoAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED0DAE041D20B23BED0A1D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4581D0B97369FE6464A0F8A /* libPods-DefiDemoApp.a */,
+				7DB4F1F6F8442E23F8F899B4 /* libPods-DefiDemoApp-DefiDemoAppUITests.a */,
+				B10C8C7B85CCD3C8D9EEDEC9 /* libPods-DefiDemoAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +480,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA99502E2C2DF08D00992C18 /* Build configuration list for PBXNativeTarget "DefiDemoApp" */;
 			buildPhases = (
+				0A9FE76C69E38ED6A01B0C30 /* [CP] Check Pods Manifest.lock */,
 				BA9950002C2DF08B00992C18 /* Sources */,
 				BA9950012C2DF08B00992C18 /* Frameworks */,
 				BA9950022C2DF08B00992C18 /* Resources */,
@@ -151,6 +498,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA9950312C2DF08D00992C18 /* Build configuration list for PBXNativeTarget "DefiDemoAppTests" */;
 			buildPhases = (
+				3694E7419A11C95E2A700104 /* [CP] Check Pods Manifest.lock */,
 				BA9950162C2DF08D00992C18 /* Sources */,
 				BA9950172C2DF08D00992C18 /* Frameworks */,
 				BA9950182C2DF08D00992C18 /* Resources */,
@@ -169,6 +517,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA9950342C2DF08D00992C18 /* Build configuration list for PBXNativeTarget "DefiDemoAppUITests" */;
 			buildPhases = (
+				68F4ED0DB89CBE6356A0B40D /* [CP] Check Pods Manifest.lock */,
 				BA9950202C2DF08D00992C18 /* Sources */,
 				BA9950212C2DF08D00992C18 /* Frameworks */,
 				BA9950222C2DF08D00992C18 /* Resources */,
@@ -231,9 +580,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA599BDC2C2E04A500319389 /* Fiat_rate_usd.json in Resources */,
 				BA9950112C2DF08D00992C18 /* Assets.xcassets in Resources */,
 				BA9950142C2DF08D00992C18 /* Base in Resources */,
-				BA99500F2C2DF08B00992C18 /* Base in Resources */,
+				BA599BDE2C2E04AB00319389 /* Currency.json in Resources */,
+				BA599BE02C2E04B100319389 /* Fiat_rate_hkd.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +604,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A9FE76C69E38ED6A01B0C30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DefiDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3694E7419A11C95E2A700104 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DefiDemoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68F4ED0DB89CBE6356A0B40D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DefiDemoApp-DefiDemoAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA9950002C2DF08B00992C18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA99500C2C2DF08B00992C18 /* ViewController.swift in Sources */,
+				BA67530E2C2F1934000EDDF2 /* PortfolioViewModelHandler.swift in Sources */,
+				BA599BD92C2DFFCA00319389 /* Crypto.swift in Sources */,
+				BA599BD32C2DFEF400319389 /* CryptoDataModel.swift in Sources */,
+				BA6753232C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift in Sources */,
+				BA599BEB2C2E120300319389 /* AssetUseCase.swift in Sources */,
+				BA599C022C2E296400319389 /* FiatRepositoryImpl.swift in Sources */,
+				BA6753152C2F2EAB000EDDF2 /* FiatSettingViewModelHandler.swift in Sources */,
+				BA599BFE2C2E289300319389 /* Fiat.swift in Sources */,
+				BA99500C2C2DF08B00992C18 /* PortfolioViewController.swift in Sources */,
+				BA6753112C2F1D20000EDDF2 /* PortfolioViewControllerFactory.swift in Sources */,
+				BA599BF22C2E147A00319389 /* AssetUseCaseHandler.swift in Sources */,
+				BA599BF02C2E13F600319389 /* AssetModel.swift in Sources */,
 				BA9950082C2DF08B00992C18 /* AppDelegate.swift in Sources */,
+				BA6753132C2F2E66000EDDF2 /* FiatSettingViewController.swift in Sources */,
+				BA6753172C2F2EB8000EDDF2 /* FiatSettingViewModel.swift in Sources */,
+				BA599BF72C2E276B00319389 /* FiatRepository.swift in Sources */,
+				BA6753072C2F157C000EDDF2 /* AssetListTableViewCell.swift in Sources */,
+				BA599BE92C2E06BE00319389 /* CryptoDataModel+Mapping.swift in Sources */,
+				BA599BFA2C2E27D900319389 /* FiatCurrency.swift in Sources */,
+				BA599BE62C2E057D00319389 /* AppError.swift in Sources */,
+				BA6753252C2FC712000EDDF2 /* UserDefaultsService.swift in Sources */,
+				BA67531B2C2F32BD000EDDF2 /* FiatSelectionViewCell.swift in Sources */,
+				BA599BEE2C2E138F00319389 /* FiatType.swift in Sources */,
+				BA6753192C2F2F3A000EDDF2 /* FiatSettingViewControllerFactory.swift in Sources */,
+				BA599BD12C2DFE7300319389 /* CryptoRepository.swift in Sources */,
+				BA599BFC2C2E280900319389 /* FiatDataModel.swift in Sources */,
+				BA67530C2C2F18B1000EDDF2 /* PortfolioViewModel.swift in Sources */,
+				BA599BE22C2E04D900319389 /* CryptoRepositoryImpl.swift in Sources */,
+				BA67531E2C2F35FF000EDDF2 /* FiatOption.swift in Sources */,
+				BA599C002C2E28F500319389 /* FiatDataModel+Mapping.swift in Sources */,
 				BA99500A2C2DF08B00992C18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +745,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BA99500D2C2DF08B00992C18 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA99500E2C2DF08B00992C18 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BA9950122C2DF08D00992C18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,6 +877,7 @@
 		};
 		BA99502F2C2DF08D00992C18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E990A2028172AE038AB4D4E /* Pods-DefiDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,7 +888,6 @@
 				INFOPLIST_FILE = DefiDemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,6 +905,7 @@
 		};
 		BA9950302C2DF08D00992C18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E18EABE9988C04A9465D60D /* Pods-DefiDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,7 +916,6 @@
 				INFOPLIST_FILE = DefiDemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,6 +933,7 @@
 		};
 		BA9950322C2DF08D00992C18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E678E66F2FB9FCBDCD7399 /* Pods-DefiDemoAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +954,7 @@
 		};
 		BA9950332C2DF08D00992C18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53DDD18BD3C093D8732108E8 /* Pods-DefiDemoAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +975,7 @@
 		};
 		BA9950352C2DF08D00992C18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1506BF437EF33674EC0AD83F /* Pods-DefiDemoApp-DefiDemoAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +994,7 @@
 		};
 		BA9950362C2DF08D00992C18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D61FDB594E584DA584C23A7 /* Pods-DefiDemoApp-DefiDemoAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

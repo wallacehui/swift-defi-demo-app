@@ -40,6 +40,10 @@
 		BA67531E2C2F35FF000EDDF2 /* FiatOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67531D2C2F35FF000EDDF2 /* FiatOption.swift */; };
 		BA6753232C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753222C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift */; };
 		BA6753252C2FC712000EDDF2 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753242C2FC712000EDDF2 /* UserDefaultsService.swift */; };
+		BA6753492C3013BC000EDDF2 /* CryptoRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6753482C3013BC000EDDF2 /* CryptoRepositoryStub.swift */; };
+		BA67534C2C30146A000EDDF2 /* Crypto+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534B2C30146A000EDDF2 /* Crypto+TestData.swift */; };
+		BA67534E2C3015C8000EDDF2 /* Fiat+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534D2C3015C8000EDDF2 /* Fiat+TestData.swift */; };
+		BA6753502C3016A7000EDDF2 /* FiatRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */; };
 		BA9950082C2DF08B00992C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950072C2DF08B00992C18 /* AppDelegate.swift */; };
 		BA99500A2C2DF08B00992C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9950092C2DF08B00992C18 /* SceneDelegate.swift */; };
 		BA99500C2C2DF08B00992C18 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99500B2C2DF08B00992C18 /* PortfolioViewController.swift */; };
@@ -107,6 +111,10 @@
 		BA67531D2C2F35FF000EDDF2 /* FiatOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatOption.swift; sourceTree = "<group>"; };
 		BA6753222C2FC636000EDDF2 /* UserDefaultsServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceProvider.swift; sourceTree = "<group>"; };
 		BA6753242C2FC712000EDDF2 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		BA6753482C3013BC000EDDF2 /* CryptoRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepositoryStub.swift; sourceTree = "<group>"; };
+		BA67534B2C30146A000EDDF2 /* Crypto+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crypto+TestData.swift"; sourceTree = "<group>"; };
+		BA67534D2C3015C8000EDDF2 /* Fiat+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fiat+TestData.swift"; sourceTree = "<group>"; };
+		BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatRepositoryStub.swift; sourceTree = "<group>"; };
 		BA9950042C2DF08B00992C18 /* DefiDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9950072C2DF08B00992C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9950092C2DF08B00992C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -394,6 +402,31 @@
 			path = Providers;
 			sourceTree = "<group>";
 		};
+		BA6753472C301396000EDDF2 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				BA6753482C3013BC000EDDF2 /* CryptoRepositoryStub.swift */,
+				BA67534F2C3016A7000EDDF2 /* FiatRepositoryStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		BA67534A2C3013F2000EDDF2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BA67534B2C30146A000EDDF2 /* Crypto+TestData.swift */,
+				BA67534D2C3015C8000EDDF2 /* Fiat+TestData.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BA6753512C3016D6000EDDF2 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
 		BA994FFB2C2DF08B00992C18 = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +469,9 @@
 		BA99501D2C2DF08D00992C18 /* DefiDemoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA6753512C3016D6000EDDF2 /* ViewModelTests */,
+				BA67534A2C3013F2000EDDF2 /* Mocks */,
+				BA6753472C301396000EDDF2 /* Stubs */,
 				BA99501E2C2DF08D00992C18 /* DefiDemoAppTests.swift */,
 			);
 			path = DefiDemoAppTests;
@@ -716,7 +752,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA6753502C3016A7000EDDF2 /* FiatRepositoryStub.swift in Sources */,
+				BA6753492C3013BC000EDDF2 /* CryptoRepositoryStub.swift in Sources */,
+				BA67534E2C3015C8000EDDF2 /* Fiat+TestData.swift in Sources */,
 				BA99501F2C2DF08D00992C18 /* DefiDemoAppTests.swift in Sources */,
+				BA67534C2C30146A000EDDF2 /* Crypto+TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

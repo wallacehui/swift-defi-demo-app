@@ -120,14 +120,9 @@ extension PortfolioViewController: UITableViewDataSource {
             return .init()
         }
         let model = viewModel.assetList[indexPath.row]
-        let formatter = NumberFormatter()
-        formatter.minimumFractionDigits = 0
-        formatter.maximumFractionDigits = 38
-        formatter.currencyCode = model.fiatSymbol
-        formatter.numberStyle = .currency
         cell.update(name: model.cryptoSymbol,
                     amount: "\(model.cryptoAmount) \(model.cryptoSymbol)",
-                    valuation: formatter.string(for: model.fiatRate))
+                    valuation: model.fiatRate?.formatted(.currency(code: model.fiatSymbol ?? "")))
         return cell
     }
 }
